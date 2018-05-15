@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+
+     {% include "header.html" %}
+
+</head>
+<body>
+<div class="bg"></div>
+<div class="logo_brand"> Meteriod - <small>Electricity Usage and Stats</small> </div>
+        <div id="loginForm">
+            <form action="" method="post" class="form-horizontal" role="form">
+             
+                <h4 class="login_h4"><center>LOGIN</center></h4>
+                <div id="form-container">
+                <div class="form-group">
+                    <label for="id_username" class="col-md-4 control-label">Email</label>
+                    <div class="col-md-8">
+                        <input type="text" name="username" id="username" value="{{ form.username }}" autofocus>                             
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-md-4 control-label">Password</label>
+                    <div class="col-md-8">
+                        <input type="password" name="password" id="password" value="{{ form.password }}">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-4 col-md-8">
+                        <input type="submit" value="Log in" class="btn btn-small btn-success" />
+                    </div>
+                </div>
+                    
+                  {% if user and user.error %}
+                      <p class="validation-summary-errors">{{ user.error }}</p>
+                  
+                  {% endif %}
+                  
+                         	
+                  </div>
+            </form>
+        </div>
+
+</div>
+
+    {% include "scripts.html" %}
+</body>
+</html>

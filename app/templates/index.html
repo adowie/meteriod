@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+ 
+   {% include "header.html" %}
+   
+<script type="text/javascript" language="javascript" >
+  u_ = '{{ user.email }}';
+</script>
+
+ 
+</head>
+<body class="keen-dashboard" style="padding-top: 80px;">
+{% include "navigator.html" %}
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div id="kilos_col" class="col-sm-3">
+
+
+      </div>
+      <div id="meter_col" class="col-sm-9">
+
+      </div>
+
+    </div>
+    
+    <div class="show_fault_meter">
+    <div class="bg"></div>
+    <h4><center>Meter Last Read Information</center><span class="cls_fault_meter"><i class="fa fa-times faa-spin animated fa-2x"></i></span></h4>
+      <div class="cont_">
+      </div>
+    </div>
+
+    <div id="admin_panel" class="admin">
+    	<div class="bg"></div>
+    	<h4><center>ADMIN PANEL</center><span class="cls_admin"><i class="fa fa-times faa-spin animated fa-2x"></i></span></h4>
+      <div class="admin_panel_cont">
+      </div>
+    </div>
+
+  </div>
+  <div class="msg_alert">
+  <h3><span class="cls"><i class="fa fa-times"></i></span></h3>
+    <p class="body"></p>
+  </div>
+
+   {% include "scripts.html" %}
+
+
+</body>
+</html>

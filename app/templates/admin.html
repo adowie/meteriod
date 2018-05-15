@@ -1,0 +1,33 @@
+{% if meters %}
+<div class="row"><div class="col-sm-3"><h3><center>Active Meters</center></h3></div></div>		
+	{% for ent in meters  %}
+	<ul>
+		
+
+		{% set silent = "checked" %}
+		{% set active = "checked" %}
+		{% if ent.silent %}		
+			{% set silent = "" %}
+		{% endif %}
+
+		{% if ent.active %}		
+			{% set active = "" %}
+		{% endif %}
+
+	
+		{% set count_ = loop.index + 1 %}
+		<li>Meter	 <span class="val_">{{ ent.meter }}</span>	</li>
+		<li>Name	 <span class="val_">{{ ent.name }}</span>	</li>
+		<li>Location	 <span class="val_">{{ ent.location }}</span>	</li>
+
+		<li>Active	 <span class="val_"> <div class="checkbox"> <input id="c{{ count_ }}" meter="{{ ent.meter }}" type="checkbox" name="active" {{ active }} /><label for="c{{ count_ }}"></label></div> </span></li>
+
+		{% set count_ = count_ + 1 %}
+		<li>Notify 	 <span class="val_"><div class="checkbox" ><input id="cm{{ count_ + 1 }}"  meter="{{ ent.meter }}"  type="checkbox" name="silent" {{ silent }} /><label for="cm{{ count_ + 1 }}"></label></div> </span></li>
+
+	</ul>
+	{% endfor %}
+
+{% endif %}
+
+

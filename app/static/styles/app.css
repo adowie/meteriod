@@ -1,0 +1,448 @@
+body {
+	margin:0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height: 50px;
+    text-align: center;
+    background: #101010;
+    color:#6495ed;
+}
+
+footer p {
+    margin:1%;
+}
+
+.dropdown-menu a{
+    display:block;
+    text-decoration:none;
+}
+
+.admin {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    padding: 1%;
+    background: transparent;
+}
+
+
+
+.admin .admin_panel_cont {
+    position: relative;
+    display: block;
+    width: 100%;
+    height:95%;
+    overflow:auto;
+}
+
+.msg_alert{
+    position: fixed;
+    display: none;
+    width: 30%;
+    height: 150px;
+    top: 25%;
+    left: 35%;
+    background: #fff;
+    z-index: 12;
+    box-shadow: 0px 0px 8px #000;
+    padding: 1%;
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+
+.msg_alert .body u {
+    color:#000;
+}
+
+.error{
+    color: #d82b2b;
+}
+
+#error_{
+	font-size:25px;
+	color:#999;
+	text-align:center;
+	display:block;
+}
+
+.msg_alert .cls {
+    position: absolute;
+    right: 3%;
+    top: 1%;
+    color:#999;
+}
+
+.msg_alert .cls :hover{
+    color:#555;
+}
+
+
+.kf_date,.ku_date {
+    float:right;
+}
+
+.kul{
+    float: left;
+    margin-top: 20px;
+}
+
+.show_fault_meter {
+    position: fixed;
+    display:none;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    z-index: 10;
+    padding: 1%; 
+    background: transparent;
+}
+
+.show_fault_meter .bg, .admin .bg { 
+    position: fixed;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    z-index: -1;
+    background: #ddd;
+    opacity: .85;
+}
+
+.show_fault_meter .cont_ {
+    position: relative;
+    display: block;
+    width: 100%;
+    height:95%;
+
+}
+
+#log_user_p {
+    margin-right: 30px;
+    margin-top: 12px;
+}
+
+
+#logged_user {
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    background: #555;
+    text-align: center;
+    font-size: 1.2vw;
+    box-shadow: 0px 0px 5px #fff;
+    width: 10%;
+    position: fixed;
+    right: 1%;
+    top: 2px;
+}
+
+.ls {
+	width: 43px;
+    margin-top: -10px;
+}
+
+.keen-dash {
+	background: #000;
+    position: fixed;
+    top: 0px;
+    height: 54px;
+    color:#000 !important;
+    opacity:.75;
+    border-bottom: 2px solid #0fd0b5;
+    z-index: 2;
+}
+
+.meter_head {
+    height:640px;
+}
+
+.val {
+    float: right;
+}
+
+.m_field {
+    display:block;
+    border-bottom:1px dashed #999;
+}
+
+.set_ {
+    cursor: pointer;
+}
+
+.set_:hover i {
+    color: #07f50f;
+}
+
+.report_ {
+    cursor: pointer;
+}
+
+.report_:hover{
+    color: #ff0047;
+}
+
+.navbar-brand {
+    color: #43d8ca !important;
+    text-shadow: 0px 0px 5px #fc3;
+    font-weight: bold;
+}
+
+/*#meter_cntr*/
+::-webkit-scrollbar {
+    display:none;
+}
+
+#meter_cntr {
+    position: absolute;
+    width: 75%;
+    left: 13%;
+    height: 100%;
+    border-left:2px solid #1c8c82;
+    border-right:2px solid #1c8c82;
+    box-shadow: 1px 1px 6px #0affe7;
+    background: #001716;
+}
+
+
+.meters_tab {
+    position: absolute;
+   
+}
+
+.details {
+    position: absolute;
+    display: none;
+    width: 48%;
+    background: #fff;
+    z-index: 5;
+}
+
+.cd_{
+    float: right;
+    color: #b76118;
+    margin-top: -5px;
+}
+
+.cd_:hover{
+    color:#000;
+}
+
+.tab {
+    border: 1px solid #1fa8d2;
+    background: #333;
+    height: 48px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.tab a {
+    color: #7268cc !important;
+    text-shadow: 1px 1px 5px #000000;
+    font-weight: bold;
+}
+
+
+.maximize {
+    position: fixed;
+    width:100%;
+    height:100% !important;
+    top:0;
+    left:0;
+    z-index: 5;
+}
+
+.tab.flatline {
+    text-decoration: line-through;
+    background: #d46a0f;
+    display:none;
+}
+
+.tab.offline {
+    text-decoration: underline;
+    background: #8e0707;
+    display:none;
+    
+}
+
+.off,.flat {
+    display: none;
+}
+
+.right {
+    float: right;
+    margin-right:1%;
+}
+
+.dropdown-menu {
+    width: 210px;
+    background: #000;
+    position: fixed;
+    border: 1px solid #1fa8d2;
+}
+
+.kwh {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: transparent;
+}
+
+.kwh img {
+    height: 100%;
+}
+
+.kilos {
+    font-size: 2vw;
+}
+
+#loading {
+    position:absolute;
+    top:40%;
+    left:40%;
+}
+
+.cls_fault_meter{
+    position: absolute;
+    top:1%;
+    right:1%;
+}
+.cls_fault_meter:hover {
+    color:#bb2929;
+}
+
+#cls_:hover {
+    color:#f00;
+}
+
+.cls_admin{
+    position: absolute;
+    top:1%;
+    right:1%;
+}
+.cls_admin:hover {
+    color:#bb2929;
+}
+
+.admin_panel_cont ul {
+	display:block;
+	width:25%;
+	list-style-type:none;
+	padding:1%;
+	font-size:20px;
+	border: 1px solid #000;
+	border-radius: 3px;
+    	background: #333;
+	color: #05b73d;
+}
+
+.val_ {
+	float:right;
+}
+
+.checkbox > input[type=checkbox] {
+    visibility: hidden;
+}
+
+.checkbox {
+   position: relative;
+   display: block;
+   width: 80px;
+   height: 26px;
+   margin: 0 auto;
+   background: #FFF;
+   border: 1px solid #999;
+   border-radius: 2px;
+   box-shadow:1px 1px 3px #000;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+}
+
+.checkbox:after {
+   position: absolute;
+   display: inline;
+   right: 10px;
+   content: 'no';
+   color: #E53935;
+   font: 12px/26px Arial, sans-serif;
+   font-weight: bold;
+   text-transform: capitalize;
+   z-index: 0;
+}
+
+.checkbox:before {
+   position: absolute;
+   display: inline;
+   left: 10px;
+   content: 'yes';
+   color: #43A047;
+   font: 12px/26px Arial, sans-serif;
+   font-weight: bold;
+   text-transform: capitalize;
+   z-index: 0;
+}
+
+.checkbox label {
+   position: absolute;
+   display: block;
+   top: 3px;
+   left: 3px;
+   width: 34px;
+   height: 20px;
+   background: #2E2E2E;
+   cursor: pointer;
+   transition: all 0.5s linear;
+   -webkit-transition: all 0.5s linear;
+   -moz-transition: all 0.5s linear;
+   border-radius: 2px;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+   z-index: 1;
+}
+
+.checkbox input[type=checkbox]:checked + label {
+   left: 43px;
+}
+
+
+#loader {
+	position:absolute;
+        top:25%;
+        left:35%;
+	text-shadow: 0px 1px 5px #0067ff;
+}
+
+.load_gif {
+	position:absolute;
+	width:100%;
+	height:30%;
+	left:0;
+	top:100%;
+}
+
+.load_gif img{
+	width:100%;
+	height:100%;
+}
+
+.loade_ {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #262626;
+	z-index: 5;
+	color: #fff;
+	font-size: 30px;	
+}
+

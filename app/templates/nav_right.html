@@ -1,0 +1,12 @@
+ <ul class="nav navbar-nav navbar-right">
+    <li class="nav-item dropdown">
+    	<p id="log_user_p" class="nav-link dropdown-toggle"  id="userOptions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    		<span id="logged_user">{{ user.fullname }}<input type="hidden" class="email" value="{{ user.email }}"/></span>
+    	</p>
+    	 <div class="dropdown-menu" aria-labelledby="userOptions">
+		 <a class="dropdown-item" href="logout">&nbsp;&nbsp;<i class="fa fa-power-off"></i>&nbsp;Logout</a>
+          <a class="dropdown-item" id="admin" href="#admin">&nbsp;&nbsp;<i class="fa fa-unlock"></i>&nbsp;Administrator</a> 
+          <!-- <a class="dropdown-item" href="#"></a> -->
+        </div>
+    </li> 
+ </ul>

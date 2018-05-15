@@ -1,0 +1,16 @@
+<script type="text/javascript" language="javascript" src="{{ url_for('static',filename='js/globals.js') }}" > </script>
+<script type="text/javascript" language="javascript" src="{{ url_for('static',filename='js/jquery.js') }}" > </script>
+<script type="text/javascript" language="javascript" src="{{ url_for('static',filename='js/serializer.js') }}" > </script>
+<script type="text/javascript" language="javascript" src="{{ url_for('static',filename='js/animations.js') }}" > </script>
+<script type="text/javascript" language="javascript" src="{{ url_for('static',filename='js/bootstrap.js') }}" > </script>
+
+{% if user%}
+<script type="text/javascript" language="javascript" src="{{ url_for('static',filename='js/app.js') }}" > </script>
+<script type="text/javascript" language="javascript" src="{{ url_for('static',filename='js/keen.js') }}" > </script>
+<script type="text/javascript" language="javascript" src="{{ url_for('static',filename='js/chart.js/dist/Chart.js') }}" > </script>
+<script type="text/javascript" language="javascript" src="{{ url_for('static',filename='js/charts.js') }}" > </script>
+
+<script type="text/javascript" language="javascript" src="{{ url_for('static',filename='js/stats.js') }}" > </script>
+{% endif %}
+
+

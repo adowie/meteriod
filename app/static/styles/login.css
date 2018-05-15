@@ -1,0 +1,81 @@
+body {
+	position: absolute;
+	width: 100%;
+    height: 100%;  
+	top:0;
+	left:0;
+}
+
+
+.logo_brand {
+	position: absolute;
+    left: 3%;
+    top: 3%;
+    font-size: 2vw;
+    font-weight: bold;
+    text-shadow: 1px 1px 9px #000000;
+    color: #7ecaef;
+    z-index: 10;
+}
+
+.logo_brand small {
+	
+}
+
+.bg {
+	content: "";
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	display: block;
+	background: url('../img/meteriod_bg.png') no-repeat center bottom;
+	background-color: #607D8B; 
+	background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+}
+
+#loginForm {
+	position: absolute;
+    width: 35%;
+    left: 33%;
+    top: 25%;
+    padding: 0;
+    border-radius: 5px;
+    z-index: 1;
+    background: #1e7fe2;
+    box-shadow: 0px 0px 15px #000;
+}
+
+#loginForm label {
+	text-align: left !important;
+	padding-left: 7%;
+}
+
+#loginForm input[type="text"],#loginForm input[type="password"], #loginForm select {
+	display: block;
+	width: 100%;
+	height: 35px;
+	border: 1px solid #ddd;
+	border-radius:5px;
+	padding-left:15px;
+	outline-color: #fff;
+}
+
+.login_h4 {
+	background: #fff;
+	padding:5%;
+	margin-top:0;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+}
+
+
+#form-container {
+	padding:3%;
+}
